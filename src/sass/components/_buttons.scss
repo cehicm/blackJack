@@ -1,4 +1,31 @@
+@use "../variables/colors" as colors;
+
 .button {
-    padding: 10px 30px;
-    border-radius: 20px;
+	padding: 10px 30px;
+	border-radius: 20px;
+	border: none;
+	box-shadow: rgb(0 0 0 / 50%) 0px 3px 8px;
+	color: white;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&--draw {
+		background-color: colors.$draw-green;
+
+		&:hover {
+			cursor: pointer;
+			background-color: colors.$hover-green;
+		}
+	}
+
+	&--stop {
+		background-color: colors.$stop-red;
+
+		&:hover {
+			cursor: pointer;
+			background-color: colors.$hover-red;
+		}
+	}
 }

@@ -5,9 +5,33 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Blackjack</title>
 	</head>
 	<body>
+		<section class="game">
+			<div class="game__wrapper">
+				<div class="cards">
+					<div class="cards__wrapper">
+						<div class="card card--one"><span id="cardOneSpan">2</span></div>
+						<div class="card card--two"><span id="cardOneSpan">2</span></div>
+					</div>
+
+					<div class="buttons">
+						<button class="button button--draw">Draw</button>
+						<button class="button button--stop">Stop</button>
+					</div>
+				</div>
+
+				<div class="score__wrapper">
+					<div class="player-score">
+						You: <span id="playerScoreSpan">12</span>
+					</div>
+					<div class="dealer-score">
+						Dealer: <span id="dealerScoreSpan">21</span>
+					</div>
+				</div>
+			</div>
+		</section>
 		<script src="/dist/scripts/app.js"></script>
 	</body>
 </html>
